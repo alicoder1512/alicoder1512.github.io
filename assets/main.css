@@ -17,7 +17,7 @@
 .task-card {
     padding: 0 15px;
 }
-.task-panel .card{
+.task-panel .card, .friend-panel .card{
     margin-bottom: 0 !important;
 }
 
