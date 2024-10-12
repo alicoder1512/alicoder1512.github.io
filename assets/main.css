@@ -31,11 +31,11 @@
 /* col */
 @media(max-width: 575px) {
     .nav-pills.nav-pills-icons i {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 30px;
     }
     .nav-pills.nav-pills-icons a{
-        font-size: 10px;
+        font-size: 12px;
     }
     .nav-pills .nav-link{
         padding: 5px 8px;
