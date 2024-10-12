@@ -14,6 +14,13 @@
     bottom: 0;
 }
 
+.task-card {
+    padding: 0 15px;
+}
+.task-panel .card{
+    margin-bottom: 0 !important;
+}
+
 
 /* media start */
 /* col-xl */
@@ -39,6 +46,14 @@
     }
     .nav-pills .nav-link{
         padding: 5px 8px;
+    }
+    #check-button{
+        font-size: 15px;
+    }
+    .btn-icon{
+        min-width: 0;
+        width: 30px;
+        height: 30px;
     }
 }
 
