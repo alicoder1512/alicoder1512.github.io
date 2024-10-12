@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>EduTap</title>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+  <link rel="icon" href="assets/img/kaiadmin/icon.png" type="image/x-icon" />
+
+  <!-- Fonts and icons -->
+  <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Public Sans:300,400,500,600,700"] },
+      custom: {
+        families: [
+          "Font Awesome 5 Solid",
+          "Font Awesome 5 Regular",
+          "Font Awesome 5 Brands",
+          "simple-line-icons",
+        ],
+        urls: ["assets/css/fonts.min.css"],
+      },
+      active: function () {
+        sessionStorage.fonts = true;
+      },
+    });
+  </script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/plugins.min.css" />
+  <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link rel="stylesheet" href="assets/css/demo.css" />
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="page-inner">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">EduTap</h4>
+        </div>
+        <div class="card-body">
+          <div class="tab-content mt-2 mb-3" id="pills-with-icon-tabContent">
+            <div class="tab-pane fade active show" id="pills-home-icon" role="tabpanel"
+              aria-labelledby="pills-home-tab-icon">
+              <p>Bosh sahifa</p>
+            </div>
+
+            <div class="tab-pane fade" id="pills-task-icon" role="tabpanel" aria-labelledby="pills-task-tab-icon">
+              <p>Vazifalar</p>
+            </div>
+
+            <div class="tab-pane fade" id="pills-friend-icon" role="tabpanel" aria-labelledby="pills-friend-tab-icon">
+              <strong>Do'stlar</strong>
+              <p>Do'stingizni taklif qiling hamda 500 coinga ega bo'ling!</p>
+            </div>
+
+            <div class="tab-pane fade" id="pills-gamepad-icon" role="tabpanel" aria-labelledby="pills-gamepad-tab-icon">
+              <p>O'yinlar</p>
+            </div>
+
+            <div class="tab-pane fade" id="pills-gift-icon" role="tabpanel" aria-labelledby="pills-gift-tab-icon">
+              <p>Sovg'alar</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container-fluid d-flex justify-content-center">
+      <ul class="nav nav-pills nav-secondary  nav-pills-no-bd nav-pills-icons justify-content-center"
+        id="pills-tab-with-icon" role="tablist">
+        <li class="nav-item submenu" role="presentation">
+          <a class="nav-link active" id="pills-home-tab-icon" data-bs-toggle="pill" href="#pills-home-icon" role="tab"
+            aria-controls="pills-home-icon" aria-selected="true">
+            <i class="icon-home"></i>
+            Bosh sahifa
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-task-tab-icon" data-bs-toggle="pill" href="#pills-task-icon" role="tab"
+            aria-controls="pills-profile-tab-icon" aria-selected="false" tabindex="-1">
+            <i class="fas fa-tasks"></i>
+            Vazifalar
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-friend-tab-icon" data-bs-toggle="pill" href="#pills-friend-icon" role="tab"
+            aria-controls="pills-friend-icon" aria-selected="false" tabindex="-1">
+            <i class="fas fa-users"></i>
+            Do'stlar
+          </a>
+        </li>
+        <li class="nav-item submenu" role="presentation">
+          <a class="nav-link" id="pills-gamepad-tab-icon" data-bs-toggle="pill" href="#pills-gamepad-icon" role="tab"
+            aria-controls="pills-gamepad-icon" aria-selected="false" tabindex="-1">
+            <i class="fas fa-gamepad"></i>
+            O'yinlarim
+          </a>
+        </li>
+        <li class="nav-item submenu" role="presentation">
+          <a class="nav-link" id="pills-gift-tab-icon" data-bs-toggle="pill" href="#pills-gift-icon" role="tab"
+            aria-controls="pills-gift-icon" aria-selected="false" tabindex="-1">
+            <i class="fas fa-gift
+            "></i>
+            Sovg'a
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+
+  <!-- jQuery Scrollbar -->
+  <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+  <!-- Chart JS -->
+  <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+  <!-- jQuery Sparkline -->
+  <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+  <!-- Chart Circle -->
+  <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+  <!-- Datatables -->
+  <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <!-- <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script> -->
+
+  <!-- jQuery Vector Maps -->
+  <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+  <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+  <!-- Kaiadmin JS -->
+  <script src="assets/js/kaiadmin.min.js"></script>
+
+  <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+  <!-- <script src="assets/js/demo.js"></script> -->
+
+</body>
+
+</html>

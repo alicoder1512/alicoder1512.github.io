@@ -1,0 +1,45 @@
+.nav-pills.nav-pills-icons i {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.nav-pills.nav-pills-no-bd li .nav-link {
+    background: none;
+}
+
+.footer {
+    padding: 0;
+    background-color: rgba(222, 222, 222, 1);
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* media start */
+/* col-xl */
+@media(min-width: 1200px) {}
+
+/* col-lg */
+@media(min-width: 992px) and (max-width:1199px) {}
+
+/* col-md */
+@media(min-width: 768px) and (max-width:991px) {}
+
+/* col-sm */
+@media(min-width: 576px) and (max-width:767px) {}
+
+/* col */
+@media(max-width: 575px) {
+    .nav-pills.nav-pills-icons i {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .nav-pills.nav-pills-icons a{
+        font-size: 10px;
+    }
+    .nav-pills .nav-link{
+        padding: 5px 8px;
+    }
+}
+
+/* media end */
