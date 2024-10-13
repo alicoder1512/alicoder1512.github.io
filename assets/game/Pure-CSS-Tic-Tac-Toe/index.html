@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pure CSS Tic Tac Toe</title>
+</head>
+<body>
+   
+<div class="game">
+    <form>
+      <div class="board">
+        <svg class="board__line" style="--x: 1; --y: 0">
+          <path d="M 5 5 L 295 5" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="300" stroke-dashoffset="300"></path>
+        </svg>
+        <svg class="board__line" style="--x: 2; --y: 0">
+          <path d="M 5 5 L 295 5" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="300" stroke-dashoffset="300"></path>
+        </svg>
+        <svg class="board__line" style="--x: 0; --y: 1">
+          <path d="M 5 5 L 295 5" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="300" stroke-dashoffset="300"></path>
+        </svg>
+        <svg class="board__line" style="--x: 0; --y: 2">
+          <path d="M 5 5 L 295 5" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="300" stroke-dashoffset="300"></path>
+        </svg>
+        <input type="checkbox" id="x--0" style="--col: 0; --row: 0"/><span style="--col: 0; --row: 0">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--0" style="--col: 0; --row: 0"/><span style="--col: 0; --row: 0">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--1" style="--col: 1; --row: 0"/><span style="--col: 1; --row: 0">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--1" style="--col: 1; --row: 0"/><span style="--col: 1; --row: 0">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--2" style="--col: 2; --row: 0"/><span style="--col: 2; --row: 0">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--2" style="--col: 2; --row: 0"/><span style="--col: 2; --row: 0">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--3" style="--col: 0; --row: 1"/><span style="--col: 0; --row: 1">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--3" style="--col: 0; --row: 1"/><span style="--col: 0; --row: 1">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--4" style="--col: 1; --row: 1"/><span style="--col: 1; --row: 1">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--4" style="--col: 1; --row: 1"/><span style="--col: 1; --row: 1">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--5" style="--col: 2; --row: 1"/><span style="--col: 2; --row: 1">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--5" style="--col: 2; --row: 1"/><span style="--col: 2; --row: 1">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--6" style="--col: 0; --row: 2"/><span style="--col: 0; --row: 2">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--6" style="--col: 0; --row: 2"/><span style="--col: 0; --row: 2">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--7" style="--col: 1; --row: 2"/><span style="--col: 1; --row: 2">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--7" style="--col: 1; --row: 2"/><span style="--col: 1; --row: 2">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <input type="checkbox" id="x--8" style="--col: 2; --row: 2"/><span style="--col: 2; --row: 2">
+          <svg class="x">
+            <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+            <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+          </svg></span>
+        <input type="checkbox" id="o--8" style="--col: 2; --row: 2"/><span style="--col: 2; --row: 2">
+          <svg class="o">
+            <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+          </svg></span>
+        <label for="x--0" style="--col: 0; --row: 0"></label>
+        <label for="o--0" style="--col: 0; --row: 0"></label>
+        <label for="x--1" style="--col: 1; --row: 0"></label>
+        <label for="o--1" style="--col: 1; --row: 0"></label>
+        <label for="x--2" style="--col: 2; --row: 0"></label>
+        <label for="o--2" style="--col: 2; --row: 0"></label>
+        <label for="x--3" style="--col: 0; --row: 1"></label>
+        <label for="o--3" style="--col: 0; --row: 1"></label>
+        <label for="x--4" style="--col: 1; --row: 1"></label>
+        <label for="o--4" style="--col: 1; --row: 1"></label>
+        <label for="x--5" style="--col: 2; --row: 1"></label>
+        <label for="o--5" style="--col: 2; --row: 1"></label>
+        <label for="x--6" style="--col: 0; --row: 2"></label>
+        <label for="o--6" style="--col: 0; --row: 2"></label>
+        <label for="x--7" style="--col: 1; --row: 2"></label>
+        <label for="o--7" style="--col: 1; --row: 2"></label>
+        <label for="x--8" style="--col: 2; --row: 2"></label>
+        <label for="o--8" style="--col: 2; --row: 2"></label>
+        <div class="board__result board__result--x result">
+          <dl class="result__content">
+            <dt class="result__title">Winner!</dt>
+            <dd class="result__details">
+              <svg class="x result__icon">
+                <path class="cross" d="M 20 20 L 80 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+                <path class="cross" d="M 80 20 L 20 80" fill="none" stroke-width="10" stroke-linecap="round" stroke-dasharray="100" stroke-dashoffset="100"></path>
+              </svg>
+            </dd>
+            <button class="result__reset" type="reset">Play again</button>
+          </dl>
+          <div class="result__firework-icon" style="--y: 496; --r: 183">🎉</div>
+          <div class="result__firework-icon" style="--y: 459; --r: 135">🎉</div>
+          <div class="result__firework-icon" style="--y: 382; --r: 75">🎉</div>
+          <div class="result__firework-icon" style="--y: 495; --r: 323">🎉</div>
+          <div class="result__firework-icon" style="--y: 424; --r: 240">🎉</div>
+          <div class="result__firework-icon" style="--y: 227; --r: 266">🎉</div>
+          <div class="result__firework-icon" style="--y: 359; --r: 279">🎉</div>
+          <div class="result__firework-icon" style="--y: 383; --r: 293">🎉</div>
+          <div class="result__firework-icon" style="--y: 383; --r: 179">🎉</div>
+          <div class="result__firework-icon" style="--y: 229; --r: 176">🎉</div>
+          <div class="result__firework-icon" style="--y: 491; --r: 338">🎉</div>
+          <div class="result__firework-icon" style="--y: 242; --r: 11">🎉</div>
+          <div class="result__firework-icon" style="--y: 481; --r: 303">🎉</div>
+          <div class="result__firework-icon" style="--y: 397; --r: 15">🎉</div>
+          <div class="result__firework-icon" style="--y: 388; --r: 191">🎉</div>
+          <div class="result__firework-icon" style="--y: 397; --r: 198">🎉</div>
+          <div class="result__firework-icon" style="--y: 399; --r: 264">🎉</div>
+          <div class="result__firework-icon" style="--y: 332; --r: 46">🎉</div>
+          <div class="result__firework-icon" style="--y: 342; --r: 64">🎉</div>
+          <div class="result__firework-icon" style="--y: 225; --r: 4">🎉</div>
+          <div class="result__firework-icon" style="--y: 271; --r: 107">🎉</div>
+          <div class="result__firework-icon" style="--y: 210; --r: 202">🎉</div>
+          <div class="result__firework-icon" style="--y: 311; --r: 262">🎉</div>
+          <div class="result__firework-icon" style="--y: 425; --r: 6">🎉</div>
+          <div class="result__firework-icon" style="--y: 260; --r: 312">🎉</div>
+          <div class="result__firework-icon" style="--y: 480; --r: 35">🎉</div>
+          <div class="result__firework-icon" style="--y: 387; --r: 264">🎉</div>
+          <div class="result__firework-icon" style="--y: 251; --r: 307">🎉</div>
+          <div class="result__firework-icon" style="--y: 201; --r: 320">🎉</div>
+          <div class="result__firework-icon" style="--y: 418; --r: 176">🎉</div>
+        </div>
+        <div class="board__result board__result--o result">
+          <dl class="result__content">
+            <dt class="result__title">Winner!</dt>
+            <dd class="result__details">
+              <svg class="o result__icon">
+                <circle class="naught" cx="50" cy="50" r="30" fill="none" stroke-width="10" stroke-dasharray="200" stroke-dashoffset="200" stroke-linecap="round"></circle>
+              </svg>
+            </dd>
+            <button class="result__reset" type="reset">Play again</button>
+          </dl>
+          <div class="result__firework-icon" style="--y: 343; --r: 130">🎉</div>
+          <div class="result__firework-icon" style="--y: 402; --r: 93">🎉</div>
+          <div class="result__firework-icon" style="--y: 315; --r: 301">🎉</div>
+          <div class="result__firework-icon" style="--y: 455; --r: 125">🎉</div>
+          <div class="result__firework-icon" style="--y: 218; --r: 115">🎉</div>
+          <div class="result__firework-icon" style="--y: 322; --r: 312">🎉</div>
+          <div class="result__firework-icon" style="--y: 205; --r: 23">🎉</div>
+          <div class="result__firework-icon" style="--y: 212; --r: 175">🎉</div>
+          <div class="result__firework-icon" style="--y: 487; --r: 1">🎉</div>
+          <div class="result__firework-icon" style="--y: 415; --r: 322">🎉</div>
+          <div class="result__firework-icon" style="--y: 368; --r: 126">🎉</div>
+          <div class="result__firework-icon" style="--y: 496; --r: 342">🎉</div>
+          <div class="result__firework-icon" style="--y: 458; --r: 322">🎉</div>
+          <div class="result__firework-icon" style="--y: 438; --r: 114">🎉</div>
+          <div class="result__firework-icon" style="--y: 453; --r: 51">🎉</div>
+          <div class="result__firework-icon" style="--y: 442; --r: 92">🎉</div>
+          <div class="result__firework-icon" style="--y: 482; --r: 9">🎉</div>
+          <div class="result__firework-icon" style="--y: 411; --r: 128">🎉</div>
+          <div class="result__firework-icon" style="--y: 439; --r: 227">🎉</div>
+          <div class="result__firework-icon" style="--y: 264; --r: 330">🎉</div>
+          <div class="result__firework-icon" style="--y: 355; --r: 286">🎉</div>
+          <div class="result__firework-icon" style="--y: 410; --r: 245">🎉</div>
+          <div class="result__firework-icon" style="--y: 387; --r: 278">🎉</div>
+          <div class="result__firework-icon" style="--y: 277; --r: 172">🎉</div>
+          <div class="result__firework-icon" style="--y: 383; --r: 239">🎉</div>
+          <div class="result__firework-icon" style="--y: 333; --r: 284">🎉</div>
+          <div class="result__firework-icon" style="--y: 336; --r: 64">🎉</div>
+          <div class="result__firework-icon" style="--y: 370; --r: 150">🎉</div>
+          <div class="result__firework-icon" style="--y: 234; --r: 279">🎉</div>
+          <div class="result__firework-icon" style="--y: 387; --r: 149">🎉</div>
+        </div>
+        <div class="board__result board__result--draw">
+          <dl class="result__content">
+            <dt class="result__title">Draw!</dt>
+            <dd class="result__details">
+              <div class="result__emoji">😭</div>
+            </dd>
+            <button class="result__reset" type="reset">Play again</button>
+          </dl>
+        </div>
+      </div>
+    </form>
+  </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>
