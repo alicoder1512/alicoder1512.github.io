@@ -41,7 +41,28 @@
   <div class="container-fluid">
     <div class="tab-content mt-2 mb-3" id="pills-with-icon-tabContent">
       <div class="tab-pane fade active show" id="pills-home-icon" role="tabpanel" aria-labelledby="pills-home-tab-icon">
-        <p>Bosh sahifa</p>
+        <div class="coin-image">
+          <div class="col-5">
+            <div class="d-flex align-items-center justify-content-around">
+              <div class="col-2 text-right p-0">
+                <img id="smallImage" src="assets/img/e coin.png" alt="Coin">
+              </div>
+              <div class="col-3 text-left ">
+                <p class="p-0 m-0" id="coin-count">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="coin" onclick="incrementCoins(event)">
+            <img src="assets/img/e coin.png" alt="Coin">
+            <div class="increment" id="increment">+1</div>
+          </div>
+          <div class="col-8">
+            <div class="progress progress-bar-primary mt-2">
+              <div class="progress-bar" id="progress-bar"></div>
+              <span class="d-none" id="progress-current">0</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="tab-pane fade task-panel" id="pills-task-icon" role="tabpanel" aria-labelledby="pills-task-tab-icon">
@@ -292,9 +313,6 @@
   <!-- Datatables -->
   <script src="assets/js/plugin/datatables/datatables.min.js"></script>
 
-  <!-- Bootstrap Notify -->
-  <!-- <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script> -->
-
   <!-- jQuery Vector Maps -->
   <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
   <script src="assets/js/plugin/jsvectormap/world.js"></script>
@@ -305,8 +323,7 @@
   <!-- Kaiadmin JS -->
   <script src="assets/js/kaiadmin.min.js"></script>
 
-  <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-  <!-- <script src="assets/js/demo.js"></script> -->
+  <script src="assets/main.js"></script>
 
 </body>
 
